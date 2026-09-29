@@ -1,0 +1,4 @@
+.simple-proof{display:flex;gap:12px;margin:25px 0 10px}
+.simple-proof a{display:block;width:140px;height:110px;overflow:hidden;border:1px solid #b8cbb9;background:white}
+.simple-proof img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.simple-bottom small{color:#748679;font-size:11px}

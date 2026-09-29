@@ -1,0 +1,81 @@
+{
+  "tipo": "conciliacion_ajustes_y_transferencias_de_laboratorio",
+  "capturado_utc": "2026-09-29T03:24:04+00:00",
+  "empresa_id": 3,
+  "ubicacion_id": 39,
+  "lineas": [
+    {
+      "codigo": "AH-FLT-001",
+      "producto_id": 60,
+      "quant_ids": [
+        39
+      ],
+      "movimientos": [
+        {
+          "id": 44,
+          "cantidad": 5.0,
+          "estado": "done",
+          "origen_ubicacion": 4,
+          "destino_ubicacion": 39
+        },
+        {
+          "id": 41,
+          "cantidad": 20.0,
+          "estado": "done",
+          "origen_ubicacion": 35,
+          "destino_ubicacion": 39
+        },
+        {
+          "id": 45,
+          "cantidad": 2.0,
+          "estado": "done",
+          "origen_ubicacion": 39,
+          "destino_ubicacion": 5
+        }
+      ],
+      "cantidad_quant": 23.0,
+      "neto_movimientos_done": 23.0,
+      "coinciden": true
+    },
+    {
+      "codigo": "AH-BAT-002",
+      "producto_id": 61,
+      "quant_ids": [
+        41
+      ],
+      "movimientos": [
+        {
+          "id": 42,
+          "cantidad": 8.0,
+          "estado": "done",
+          "origen_ubicacion": 35,
+          "destino_ubicacion": 39
+        }
+      ],
+      "cantidad_quant": 8.0,
+      "neto_movimientos_done": 8.0,
+      "coinciden": true
+    },
+    {
+      "codigo": "AH-FRE-003",
+      "producto_id": 62,
+      "quant_ids": [
+        43
+      ],
+      "movimientos": [
+        {
+          "id": 43,
+          "cantidad": 12.0,
+          "estado": "done",
+          "origen_ubicacion": 35,
+          "destino_ubicacion": 39
+        }
+      ],
+      "cantidad_quant": 12.0,
+      "neto_movimientos_done": 12.0,
+      "coinciden": true
+    }
+  ],
+  "todos_coinciden": true,
+  "flujo_filtro_verificado": true
+}

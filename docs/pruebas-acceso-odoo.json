@@ -1,0 +1,977 @@
+{
+  "tipo": "prueba_acceso_no_destructiva",
+  "capturado_utc": "2026-09-29T03:29:24+00:00",
+  "base": "audit_sim",
+  "empresa_id": 3,
+  "documentos": {
+    "stock.quant": 39,
+    "product.template": 49,
+    "purchase.order": 13,
+    "sale.order": 27,
+    "account.move": 28
+  },
+  "usuarios": [
+    {
+      "login": "elena.salcedo@horizonte.example",
+      "uid": 8,
+      "grupos": {
+        "base.group_user": {
+          "ok": true,
+          "valor": true
+        },
+        "stock.group_stock_user": {
+          "ok": true,
+          "valor": false
+        },
+        "stock.group_stock_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_invoice": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_salesman": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_user": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_manager": {
+          "ok": true,
+          "valor": false
+        }
+      },
+      "modelos": {
+        "stock.quant": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              39
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "product.template": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              49
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "purchase.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "sale.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "account.move": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "login": "martin.varela@horizonte.example",
+      "uid": 9,
+      "grupos": {
+        "base.group_user": {
+          "ok": true,
+          "valor": true
+        },
+        "stock.group_stock_user": {
+          "ok": true,
+          "valor": false
+        },
+        "stock.group_stock_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_invoice": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_salesman": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_user": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_manager": {
+          "ok": true,
+          "valor": false
+        }
+      },
+      "modelos": {
+        "stock.quant": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              39
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "product.template": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              49
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "purchase.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "sale.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "account.move": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "login": "lucia.montes@horizonte.example",
+      "uid": 10,
+      "grupos": {
+        "base.group_user": {
+          "ok": true,
+          "valor": true
+        },
+        "stock.group_stock_user": {
+          "ok": true,
+          "valor": true
+        },
+        "stock.group_stock_manager": {
+          "ok": true,
+          "valor": true
+        },
+        "account.group_account_invoice": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_salesman": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_user": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_manager": {
+          "ok": true,
+          "valor": false
+        }
+      },
+      "modelos": {
+        "stock.quant": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              39
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "product.template": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": true
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              49
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": true
+            }
+          }
+        },
+        "purchase.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              13
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "sale.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              27
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "account.move": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": false,
+            "tipo": "Otro fallo RPC"
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        }
+      }
+    },
+    {
+      "login": "diego.rios@horizonte.example",
+      "uid": 11,
+      "grupos": {
+        "base.group_user": {
+          "ok": true,
+          "valor": true
+        },
+        "stock.group_stock_user": {
+          "ok": true,
+          "valor": false
+        },
+        "stock.group_stock_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "account.group_account_invoice": {
+          "ok": true,
+          "valor": true
+        },
+        "account.group_account_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_salesman": {
+          "ok": true,
+          "valor": false
+        },
+        "sale.group_sale_manager": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_user": {
+          "ok": true,
+          "valor": false
+        },
+        "purchase.group_purchase_manager": {
+          "ok": true,
+          "valor": false
+        }
+      },
+      "modelos": {
+        "stock.quant": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              39
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "product.template": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              49
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": false
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "purchase.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              13
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "sale.order": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": false
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              27
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": false
+            }
+          }
+        },
+        "account.move": {
+          "acl": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "create": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": true
+            }
+          },
+          "lectura_registro": {
+            "ok": true,
+            "valor": [
+              28
+            ]
+          },
+          "acceso_registro": {
+            "read": {
+              "ok": true,
+              "valor": true
+            },
+            "write": {
+              "ok": true,
+              "valor": true
+            },
+            "unlink": {
+              "ok": true,
+              "valor": true
+            }
+          }
+        }
+      }
+    }
+  ]
+}

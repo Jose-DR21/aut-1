@@ -1,0 +1,4 @@
+.simple-files-header{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.simple-files-header .simple-cta{margin-top:0}
+.simple-bottom-links-only{display:block;padding-top:48px;padding-bottom:48px}
+.simple-hero-actions{display:flex;flex-wrap:wrap;gap:12px}

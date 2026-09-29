@@ -1,0 +1,8 @@
+.env
+node_modules/
+.next/
+odoo/filestore/
+odoo/backups/
+*.log
+__pycache__/
+odoo/credenciales-locales.json

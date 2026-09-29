@@ -1,0 +1,40 @@
+anexo,campo,valor,clasificacion,pantalla_origen,identificador_registro,captura,estado
+2,Patrocinador,Elena Salcedo gerente general,ROL ASIGNADO EN SIMULACION,formulario diligenciado 2,anexo-02,evidencias/formularios/anexo-02.png,Ver registro Odoo de usuario ID 8 en fila observada
+3,Involucrados,Elena Salcedo Jose Ramos Lucia Montes y Diego Rios,PERSONAS DEL CASO,formulario diligenciado 3,anexo-03,evidencias/formularios/anexo-03.png,Jose Ramos es auditor lider documental; usuario Odoo ID 9 conserva nombre Martin Varela y no se atribuye a Jose
+4,Objetivo,Evaluar controles de Inventario y Facturacion,OBJETIVO PLANIFICADO,formulario diligenciado 4,anexo-04,evidencias/formularios/anexo-04.png,No es hallazgo
+5,Cronograma,2026-10-05 a 2026-10-28,FECHAS PLANIFICADAS,formulario diligenciado 5,anexo-05,evidencias/formularios/anexo-05.png,Sin duracion real
+6,Riesgo,Acceso excesivo H-01,OBSERVADO EN LABORATORIO,formulario diligenciado 6,anexo-06,evidencias/formularios/anexo-06.png,Pruebas ACL y por registro en docs/pruebas-acceso-odoo.json
+7,Capacitacion,Permisos Odoo planificados,FORMACION PROPUESTA,formulario diligenciado 7,anexo-07,evidencias/formularios/anexo-07.png,No impartida
+9,Estado,PostgreSQL 18.6 y Odoo 18 operativos,HECHO ENTORNO LOCAL,formulario diligenciado 9 y lectura XML-RPC,anexo-09,evidencias/formularios/anexo-09.png,Ver capturas Odoo y JSON observado en filas inferiores
+10,Cambio,Revisar roles tras H-01,PROPUESTA NO AUTORIZADA,formulario diligenciado 10,anexo-10,evidencias/formularios/anexo-10.png,Cambio de roles no implantado
+11,Contingencia,Recuperacion de laboratorio,PLAN PROPUESTO,formulario diligenciado 11,anexo-11,evidencias/formularios/anexo-11.png,No activada
+12,Duracion real,No medida,NO OBSERVADO,formulario diligenciado 12,anexo-12,evidencias/formularios/anexo-12.png,Sin variacion calculable
+13,Acceso,Permisos cruzados en laboratorio,HALLAZGO TECNICO PENDIENTE DE REVISION,formulario diligenciado 13,anexo-13,evidencias/formularios/anexo-13.png,Ver pruebas no destructivas y filas Odoo de abajo
+14,Pruebas del cambio,Pendiente,NO OBSERVADO,formulario diligenciado 14,anexo-14,evidencias/formularios/anexo-14.png,No aprobado
+15,Comunicaciones,Frecuencias propuestas,PLAN PROPUESTO,formulario diligenciado 15,anexo-15,evidencias/formularios/anexo-15.png,Sin envio efectivo acreditado
+16,Entrenamiento,Pendiente,NO OBSERVADO,formulario diligenciado 16,anexo-16,evidencias/formularios/anexo-16.png,Sin capacitacion efectuada
+17,Hallazgo H-01,Segregacion incompleta en laboratorio,OBSERVADO SIN APROBACION,formulario diligenciado 17,anexo-17,evidencias/formularios/anexo-17.png,Sin opinion final ni firma
+18,Activos,EDT cronograma y capturas,ACTIVOS DOCUMENTALES,formulario diligenciado 18,anexo-18,evidencias/formularios/anexo-18.png,Capturas Odoo en filas observadas abajo
+19,Leccion,Confirmar recursos antes de evidenciar,LECCION DOCUMENTAL,formulario diligenciado 19,anexo-19,evidencias/formularios/anexo-19.png,No aprobada por patrocinadora
+20,Cierre,Proyecto abierto,ESTADO DOCUMENTAL,formulario diligenciado 20,anexo-20,evidencias/formularios/anexo-20.png,No aprobado
+3,Usuario Elena Salcedo,ID 8,OBSERVADO EN ODOO,Usuarios Odoo,8,evidencias/odoo/usuarios-odoo.png,Prueba negativa registrada en docs/pruebas-acceso-odoo.json
+3,Usuario Martin Varela,ID 9,OBSERVADO EN ODOO,Usuarios Odoo,9,evidencias/odoo/usuarios-odoo.png,Cuenta tecnica historica distinta de Jose Ramos; prueba registrada en docs/pruebas-acceso-odoo.json
+3,Usuario Lucia Montes,ID 10,OBSERVADO EN ODOO,Usuarios Odoo,10,evidencias/odoo/usuarios-odoo.png,Permisos cruzados H-01 documentados
+3,Usuario Diego Rios,ID 11,OBSERVADO EN ODOO,Usuarios Odoo,11,evidencias/odoo/usuarios-odoo.png,Permisos cruzados H-01 documentados
+9,Producto filtro AH-FLT-001,plantilla ID 49,OBSERVADO EN ODOO,Inventario productos,49,evidencias/odoo/productos-odoo.png,Captura historica de 20; existencia actual 23 en docs/conciliacion-inventario.json
+9,Producto bateria AH-BAT-002,plantilla ID 50,OBSERVADO EN ODOO,Inventario productos,50,evidencias/odoo/productos-odoo.png,Existencia 8 en quant 41 segun lectura XML-RPC
+9,Producto frenos AH-FRE-003,plantilla ID 51,OBSERVADO EN ODOO,Inventario productos,51,evidencias/odoo/productos-odoo.png,Existencia 12 en quant 43 segun lectura XML-RPC
+9,Compra P00013,orden ID 13,CAPTURA HISTORICA PREVIA,Purchase Requests for Quotation,13,evidencias/odoo/compras-borrador-odoo.png,Mostraba draft; hoy purchase y recepcion done segun nuevas filas
+9,Venta S00027,orden ID 27,CAPTURA HISTORICA PREVIA,Sales Quotations,27,evidencias/odoo/ventas-borrador-odoo.png,Mostraba draft; hoy sale y entrega done segun nuevas filas
+9,Factura cliente inicial,asiento ID 25,CAPTURA HISTORICA PREVIA,Invoicing Customers Invoices,25,evidencias/odoo/facturas-odoo.png,Mostraba draft; hoy cancel; factura nativa 28 publicada y pagada
+13,Diego en compra P00013,UID 11 y compra ID 13,PERMISO CRUZADO OBSERVADO,Purchase RFQ detalle,13,evidencias/odoo/diego-acceso-compra.png,Confirm Order visible no pulsado; has_access write true en docs/pruebas-acceso-odoo.json
+13,Lucia en Ventas,UID 10 y venta ID 27,PERMISO POR MODELO CON LIMITE UI,Sales Quotations,27,evidencias/odoo/lucia-acceso-venta.png,has_access write true para sale.order pero Access Error para sale.order.option en UI; no se completó flujo
+9,Ajuste filtro 20,movimiento ID 41,OBSERVADO EN ODOO,Inventory Moves History,41,evidencias/odoo/movimientos-inventario-odoo.png,Done; quant 39 actual 23 tras recibir 5 y entregar 2
+9,Ajuste bateria 8,movimiento ID 42,OBSERVADO EN ODOO,Inventory Moves History,42,evidencias/odoo/movimientos-inventario-odoo.png,Done y quant 41 igual 8; ver conciliacion-inventario.json
+9,Ajuste frenos 12,movimiento ID 43,OBSERVADO EN ODOO,Inventory Moves History,43,evidencias/odoo/movimientos-inventario-odoo.png,Done y quant 43 igual 12; ver conciliacion-inventario.json
+9,Recepcion AH/IN/00001,transferencia ID 19,OBSERVADO EN ODOO,Stock Picking Receipts,19,evidencias/odoo/recepcion-completada-odoo.png,Done entrada 5 de filtro desde proveedor; origen P00013
+9,Entrega AH/OUT/00001,transferencia ID 20,OBSERVADO EN ODOO,Stock Picking Deliveries,20,evidencias/odoo/entrega-completada-odoo.png,Done salida 2 de filtro a cliente; origen S00027
+9,Factura cliente INV/2026/00001,factura ID 28,OBSERVADO EN ODOO,Customer Invoices,28,evidencias/odoo/factura-cliente-pagada-odoo.png,Posted y paid total 73.60; origen S00027
+9,Factura proveedor BILL/2026/09/0001,factura ID 27,OBSERVADO EN ODOO,Vendor Bills,27,evidencias/odoo/factura-proveedor-pagada-odoo.png,Posted y paid total 103.50; origen P00013
+9,Cobro cliente PBNK1/2026/00002,pago ID 2,OBSERVADO EN ODOO,Customer Payments,2,evidencias/odoo/cobro-cliente-odoo.png,Estado paid importe 73.60; asiento ID 30 posted; no dinero real
+9,Pago proveedor PBNK1/2026/00001,pago ID 1,OBSERVADO EN ODOO,Vendor Payments,1,evidencias/odoo/pago-proveedor-odoo.png,Estado paid importe 103.50; asiento ID 29 posted; no dinero real

@@ -1,0 +1,11 @@
+id,tarea,dias_previstos,inicio_plan,fin_plan,predecesora,estado
+3,Elaborar propuesta,1,2026-10-05,2026-10-05,,Planificado
+4,Reunión ficticia de definición,1,2026-10-06,2026-10-06,3,Planificado
+5,Acta constitutiva,1,2026-10-07,2026-10-07,4,Planificado
+6,Identificación de involucrados,1,2026-10-08,2026-10-08,5,Planificado
+7,Alcance EDT calidad capacitación comunicaciones,2,2026-10-09,2026-10-12,6,Planificado
+8,Preparar Odoo y cargar caso,2,2026-10-13,2026-10-14,7,Bloqueado por Docker
+9,Pruebas y evidencia en Odoo,3,2026-10-15,2026-10-19,8,Pendiente
+10,Solicitud y control del cambio,3,2026-10-20,2026-10-22,9,Pendiente
+11,Seguimiento y controles,2,2026-10-23,2026-10-26,10,Pendiente
+12,Informe y cierre,2,2026-10-27,2026-10-28,11,Pendiente

@@ -1,0 +1,49 @@
+{
+  "tipo": "conciliacion_documental_laboratorio",
+  "capturado_utc": "2026-09-29T03:24:43+00:00",
+  "empresa_id": 3,
+  "flujos": [
+    {
+      "orden_id": 13,
+      "orden": "P00013",
+      "transferencia_id": 19,
+      "transferencia": "AH/IN/00001",
+      "factura_id": 27,
+      "factura": "BILL/2026/09/0001",
+      "factura_estado": "posted",
+      "factura_saldo": 0.0,
+      "factura_pago_estado": "paid",
+      "pago_id": 1,
+      "pago": "PBNK1/2026/00001",
+      "pago_estado": "paid",
+      "asiento_pago_id": 29,
+      "asiento_pago_estado": "posted",
+      "importe": 103.5,
+      "coincide": true
+    },
+    {
+      "orden_id": 27,
+      "orden": "S00027",
+      "transferencia_id": 20,
+      "transferencia": "AH/OUT/00001",
+      "factura_id": 28,
+      "factura": "INV/2026/00001",
+      "factura_estado": "posted",
+      "factura_saldo": 0.0,
+      "factura_pago_estado": "paid",
+      "pago_id": 2,
+      "pago": "PBNK1/2026/00002",
+      "pago_estado": "paid",
+      "asiento_pago_id": 30,
+      "asiento_pago_estado": "posted",
+      "importe": 73.6,
+      "coincide": true
+    }
+  ],
+  "borradores_independientes_cancelados": [
+    25,
+    26
+  ],
+  "todos_coinciden": true,
+  "limite": "La confirmación en Odoo es de laboratorio; no acredita dinero real ni aceptación humana del informe."
+}
