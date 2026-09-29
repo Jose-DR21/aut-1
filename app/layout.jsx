@@ -5,5 +5,6 @@ import './proof.css';
 import './gallery.css';
 import './form-collection.css';
 import './files-header.css';
-export const metadata = {title:'Simulacion de sistema de autoria por Jose Ramos',description:'Simulación académica Odoo basada en Romero (2012).'};
+import './portfolio.css';
+export const metadata = {title:'Portafolio de actividades | Jose Ramos',description:'Actividades académicas de Jose Ramos: documentos, formularios y evidencias.'};
 export default function Layout({children}){return <html lang="es"><body>{children}</body></html>}
